@@ -1,0 +1,41 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<div class="logout-container">
+  <button mat-icon-button (click)="logout()" class="logout-button">
+    <mat-icon>logout</mat-icon>
+  </button>
+</div>
+
+<div class="task-container">
+  <div class="task-card">
+    <table class="task-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Datum</th>
+          <th>Version</th>
+          <th>Schwierigkeitsgrad</th>
+          <th>Abgeschlossen</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let task of tasks; let i = index">
+          <td>{{ task.name }}</td>
+          <td>{{ task.date }}</td>
+          <td>{{ task.version }}</td>
+          <td>{{ task.difficulty }}</td>
+          <td>
+            <svg class="percentage-circle" viewBox="0 0 36 36">
+              <circle class="circle-bg" cx="18" cy="18" r="15"></circle>
+              <circle class="circle" cx="18" cy="18" r="15" [attr.stroke-dasharray]="task.percentage + ', 100'"></circle>
+              <text x="18" y="20.35" class="percentage-text">{{ task.percentage }}%</text>
+            </svg>
+          </td>
+          <td>
+            <button routerLink="{{ task.link }}" routerLinkActive="active" class="start-button">Starten</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

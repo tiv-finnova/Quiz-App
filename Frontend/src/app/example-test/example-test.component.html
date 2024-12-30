@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <div class="stepper">
+      <div *ngFor="let step of steps; let i = index" class="step-wrapper">
+        <div class="step" [ngClass]="{'completed': i <= currentStep}">
+          {{ i + 1 }}
+        </div>
+        <div *ngIf="i < steps.length - 1" class="line"></div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="title">{{ steps[currentStep].title }}</div>
+      <div *ngIf="steps[currentStep].type === 'text'">
+        <label for="textInput" class="question-label">{{ steps[currentStep].text }}</label>
+        <input type="text" id="textInput" class="text-input" [(ngModel)]="steps[currentStep].answer" />
+      </div>
+      <div *ngIf="steps[currentStep].type === 'multiple-choice'">
+        <div class="question-label">{{ steps[currentStep].text }}</div>
+        <div class="multiple-choice-options">
+          <div *ngFor="let option of steps[currentStep].options" class="option-wrapper" (click)="steps[currentStep].answer = option">
+            <input type="radio" [name]="'option' + currentStep" [value]="option" [(ngModel)]="steps[currentStep].answer" class="radio-input" />
+            <label class="option-label">{{ option }}</label>
+          </div>
+        </div>
+      </div>
+      <div class="button-container">
+        <button class="button" (click)="prevStep()" [disabled]="currentStep === 0">Zurück</button>
+        <button class="button" *ngIf="currentStep < steps.length - 1" (click)="nextStep()">Weiter</button>
+        <button class="button" *ngIf="currentStep === steps.length - 1" (click)="finishExam()">Abschliessen</button>
+      </div>
+    </div>
+  </body>
+</html>
