@@ -17,6 +17,6 @@ public class LoginController {
     boolean isAuthenticated = login.authenticate(request.getUsername(), request.getPassword());
     return isAuthenticated
         ? ResponseEntity.ok("Login erfolgreich")
-        : ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Ungültige Anmeldedaten");
+        : ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Abgelehnt");
   }
 }
