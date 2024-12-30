@@ -6,15 +6,15 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/register")
+@RequestMapping("/api/register")
 public class RegisterController {
 
   @Autowired
   private RegisterRepository registerRepository;
 
   @PostMapping
-  public ResponseEntity<String> accounts(@RequestBody Register register) {
-    registerRepository.save(register);
-    return new ResponseEntity<>("User registered successfully", HttpStatus.CREATED);
+  public ResponseEntity<String> register(@RequestBody Register request) {
+    registerRepository.save(request);
+    return ResponseEntity.status(HttpStatus.CREATED).body("User registered successfully");
   }
 }
