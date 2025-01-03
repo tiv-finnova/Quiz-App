@@ -7840,7 +7840,7 @@ yoctocolors-cjs@^2.1.2:
   resolved "https://dev.finnova.ch:443/artifactory/api/npm/npm.internal.finnova.ch/yoctocolors-cjs/-/yoctocolors-cjs-2.1.2.tgz"
   integrity sha512-cYVsTjKl8b+FrnidjibDWskAv7UKOfcwaVZdp/it9n1s9fU3IkgDbhdIRKCW4JDsAlECJY0ytoVPT3sK6kideA==
 
-zone.js@~0.14.10, "zone.js@https://dev.finnova.ch/artifactory/api/npm/npm.internal.finnova.ch/zone.js/-/zone.js-0.14.10.tgz":
+zone.js@~0.14.10:
   version "0.14.10"
-  resolved "https://dev.finnova.ch/artifactory/api/npm/npm.internal.finnova.ch/zone.js/-/zone.js-0.14.10.tgz"
+  resolved "https://dev.finnova.ch:443/artifactory/api/npm/npm.internal.finnova.ch/zone.js/-/zone.js-0.14.10.tgz"
   integrity sha512-YGAhaO7J5ywOXW6InXNlLmfU194F8lVgu7bRntUF3TiG8Y3nBK0x1UJJuHUP/e8IyihkjCYqhCScpSwnlaSRkQ==
