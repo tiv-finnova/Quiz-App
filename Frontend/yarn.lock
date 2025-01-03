@@ -119,7 +119,7 @@
     ora "5.4.1"
     rxjs "7.8.1"
 
-"@angular/animations@^17.0.0 || ^18.0.0", "@angular/animations@^18.2.0", "@angular/animations@18.2.11":
+"@angular/animations@^17.0.0 || ^18.0.0", "@angular/animations@^18.2.11", "@angular/animations@18.2.11":
   version "18.2.11"
   resolved "https://dev.finnova.ch:443/artifactory/api/npm/npm.internal.finnova.ch/@angular/animations/-/animations-18.2.11.tgz"
   integrity sha512-ghgXa2VhtyJJnTMuH2NYxCMsveQbZno44AZGygPqrcW8UQMQe9GulFaTXCH5s6/so2CLy2ZviIwSZQRgK0ZlDw==
@@ -189,14 +189,14 @@
     symbol-observable "4.0.0"
     yargs "17.7.2"
 
-"@angular/common@^17.0.0 || ^18.0.0", "@angular/common@^18.2.0", "@angular/common@18.2.11":
+"@angular/common@^17.0.0 || ^18.0.0", "@angular/common@^18.2.11", "@angular/common@18.2.11":
   version "18.2.11"
   resolved "https://dev.finnova.ch:443/artifactory/api/npm/npm.internal.finnova.ch/@angular/common/-/common-18.2.11.tgz"
   integrity sha512-bamJeISl2zUlvjPYebQWazUjhjXU9nrot42cQJng94SkvNENT9LTWfPYgc+Bd972Kg+31jG4H41rgFNs7zySmw==
   dependencies:
     tslib "^2.3.0"
 
-"@angular/compiler-cli@^18.0.0", "@angular/compiler-cli@^18.2.0":
+"@angular/compiler-cli@^18.0.0", "@angular/compiler-cli@^18.2.11":
   version "18.2.11"
   resolved "https://dev.finnova.ch:443/artifactory/api/npm/npm.internal.finnova.ch/@angular/compiler-cli/-/compiler-cli-18.2.11.tgz"
   integrity sha512-YJlAOiXZUYP6/RK9isu5AOucmNZhFB9lpY/beMzkkWgDku+va8szm4BZbLJFz176IUteyLWF3IP4aE7P9OBlXw==
@@ -210,21 +210,21 @@
     tslib "^2.3.0"
     yargs "^17.2.1"
 
-"@angular/compiler@^18.2.0", "@angular/compiler@18.2.11":
+"@angular/compiler@^18.2.11", "@angular/compiler@18.2.11":
   version "18.2.11"
   resolved "https://dev.finnova.ch:443/artifactory/api/npm/npm.internal.finnova.ch/@angular/compiler/-/compiler-18.2.11.tgz"
   integrity sha512-PSVL1YXUhTzkgJNYXiWk9eAZxNV6laQJRGdj9++C1q9m2S9/GlehZGzkt5GtC5rlUweJucCNvBC1+2D5FAt9vA==
   dependencies:
     tslib "^2.3.0"
 
-"@angular/core@^17.0.0 || ^18.0.0", "@angular/core@^18.2.0", "@angular/core@18.2.11":
+"@angular/core@^17.0.0 || ^18.0.0", "@angular/core@^18.2.11", "@angular/core@18.2.11":
   version "18.2.11"
   resolved "https://dev.finnova.ch:443/artifactory/api/npm/npm.internal.finnova.ch/@angular/core/-/core-18.2.11.tgz"
   integrity sha512-/AGAFyZN8KR+kW5FUFCCBCj3qHyDDum7G0lJe5otrT9AqF6+g7PjF8yLha/6wPkJG7ri5xGLhini1sEivVeq/g==
   dependencies:
     tslib "^2.3.0"
 
-"@angular/forms@^17.0.0 || ^18.0.0", "@angular/forms@^18.2.0":
+"@angular/forms@^17.0.0 || ^18.0.0", "@angular/forms@^18.2.11":
   version "18.2.11"
   resolved "https://dev.finnova.ch:443/artifactory/api/npm/npm.internal.finnova.ch/@angular/forms/-/forms-18.2.11.tgz"
   integrity sha512-QjxayOxDTqsTJGBzfWd3nms1LZIXj2f1+wIPxxUNXyNS5ZaM7hBWkz2BTFYeewlD/HdNj0alNVCYK3M8ElLWYw==
@@ -285,21 +285,21 @@
     "@material/typography" "15.0.0-canary.a246a4439.0"
     tslib "^2.3.0"
 
-"@angular/platform-browser-dynamic@^18.2.0":
+"@angular/platform-browser-dynamic@^18.2.11":
   version "18.2.11"
   resolved "https://dev.finnova.ch:443/artifactory/api/npm/npm.internal.finnova.ch/@angular/platform-browser-dynamic/-/platform-browser-dynamic-18.2.11.tgz"
   integrity sha512-a30U4ZdTZSvL17xWwOq6xh9ToCDP2K7/j1HTJFREObbuAtZTa/6IVgBUM6oOMNQ43kHkT6Mr9Emkgf9iGtWwfw==
   dependencies:
     tslib "^2.3.0"
 
-"@angular/platform-browser@^17.0.0 || ^18.0.0", "@angular/platform-browser@^18.2.0", "@angular/platform-browser@18.2.11":
+"@angular/platform-browser@^17.0.0 || ^18.0.0", "@angular/platform-browser@^18.2.11", "@angular/platform-browser@18.2.11":
   version "18.2.11"
   resolved "https://dev.finnova.ch:443/artifactory/api/npm/npm.internal.finnova.ch/@angular/platform-browser/-/platform-browser-18.2.11.tgz"
   integrity sha512-bzcP0QdPT/ncTxOx0t7901z5m0wDmkraTo/es4g8reV6VK9Ptv0QDuD8aDvrHh7sLCX5VgwDF9ohc6S2TpYUCA==
   dependencies:
     tslib "^2.3.0"
 
-"@angular/router@^18.2.0":
+"@angular/router@^18.2.11":
   version "18.2.11"
   resolved "https://dev.finnova.ch:443/artifactory/api/npm/npm.internal.finnova.ch/@angular/router/-/router-18.2.11.tgz"
   integrity sha512-xh4+t4pNBWxeH1a6GIoEGVSRZO4NDKK8q6b+AzB5GBgKsYgOz2lc74RXIPA//pK3aHrS9qD4sJLlodwgE/1+bA==
@@ -7830,7 +7830,7 @@ yauzl@^2.10.0:
     buffer-crc32 "~0.2.3"
     fd-slicer "~1.1.0"
 
-yocto-queue@^1.0.0, yocto-queue@^1.1.1:
+yocto-queue@^1.0.0:
   version "1.1.1"
   resolved "https://registry.npmjs.org/yocto-queue/-/yocto-queue-1.1.1.tgz"
   integrity sha512-b4JR1PFR10y1mKjhHY9LaGo6tmrgjit7hxVIeAmyMw3jegXR4dhYqLaQF5zMXZxY7tLpMyJeLjr1C4rLmkVe8g==
