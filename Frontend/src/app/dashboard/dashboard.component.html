@@ -6,7 +6,7 @@
   </button>
 </div>
 
-<div class="task-container">
+<div class="task-container" *ngIf="!hasError">
   <div class="task-card">
     <table class="task-table">
       <thead>
@@ -19,20 +19,26 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let task of tasks; let i = index">
-          <td>{{ task.name }}</td>
-          <td>{{ task.date }}</td>
-          <td>{{ task.version }}</td>
-          <td>{{ task.difficulty }}</td>
+        <tr *ngFor="let task of tasks">
+          <td>{{ task.quizName }}</td>
+          <td>{{ task.quizDate }}</td>
+          <td>{{ task.quizVersion }}</td>
+          <td>{{ task.quizLevel }}</td>
           <td>
             <svg class="percentage-circle" viewBox="0 0 36 36">
               <circle class="circle-bg" cx="18" cy="18" r="15"></circle>
-              <circle class="circle" cx="18" cy="18" r="15" [attr.stroke-dasharray]="task.percentage + ', 100'"></circle>
-              <text x="18" y="20.35" class="percentage-text">{{ task.percentage }}%</text>
+              <circle
+                class="circle"
+                cx="18"
+                cy="18"
+                r="15"
+                [attr.stroke-dasharray]="task.quizLevel + ', 100'">
+              </circle>
+              <text x="18" y="20.35" class="percentage-text">{{ task.quizLevel }}%</text>
             </svg>
           </td>
           <td>
-            <button routerLink="{{ task.link }}" routerLinkActive="active" class="start-button">Starten</button>
+            <a [href]="'/Quiz/' + task.id" class="start-button">Starten</a>
           </td>
         </tr>
       </tbody>

@@ -78,20 +78,22 @@ html, body {
 }
 
 .start-button {
-  background-color: #0074D9;
+  background-color: #007bff;
   color: white;
-  border: none;
-  padding: 0.8rem 1.5rem;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s, transform 0.3s;
-
-  &:hover {
-    background-color: #001f3f;
-    transform: scale(1.1);
-  }
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+  transition: background-color 0.3s;
 }
+
+.start-button:hover {
+  background-color: #0056b3;
+}
+
 
 .logout-container {
   display: flex;

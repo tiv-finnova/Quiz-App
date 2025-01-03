@@ -17,8 +17,8 @@
       <input [(ngModel)]="password" (keyup.enter)="login()" type="password" placeholder="Passwort" class="auth-input">
       <button (click)="login()" class="auth-button">Login</button>
 
-      <p class="message success" *ngIf="loginMessage && !loading">{{loginMessage}}</p>
-      <p class="message error" *ngIf="loginErrorMessage && !loading">{{loginErrorMessage}}</p>
+      <p class="message success" *ngIf="loginMessage && !loading">{{ loginMessage }}</p>
+      <p class="message error" *ngIf="loginErrorMessage && !loading">{{ loginErrorMessage }}</p>
     </div>
   </div>
 
@@ -34,7 +34,7 @@
       <input [(ngModel)]="registerUsername" placeholder="Benutzername" class="auth-input">
       <input [(ngModel)]="registerPassword" type="password" placeholder="Passwort" class="auth-input">
       <button (click)="register()" class="auth-button">Registrieren</button>
-      <p class="message success" *ngIf="registerMessage && !loading">{{registerMessage}}</p>
+      <p class="message success" *ngIf="registerMessage && !loading">{{ registerMessage }}</p>
     </div>
   </div>
 </div>
