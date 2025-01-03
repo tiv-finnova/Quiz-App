@@ -22,8 +22,8 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: ./SpringBootApp/Frontend
+        working-directory: Frontend
 
       - name: Run Cypress tests
         run: npm run cypress:run
-        working-directory: ./SpringBootApp/Frontend
+        working-directory: Frontend
