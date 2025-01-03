@@ -1,0 +1,68 @@
+/* Container for the error popup */
+.error-popup {
+  position: fixed;
+  top: 20px; /* Zielposition */
+  left: 50%;
+  transform: translateX(-50%); /* Horizontale Zentrierung */
+  max-width: 320px;
+  background-color: #ef665b;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  animation: slideDown 0.5s ease-in-out;
+  animation-fill-mode: forwards; /* Bleibt nach der Animation in der Endposition */
+}
+
+/* Content within the error popup */
+.error-popup-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  flex-grow: 1;
+}
+
+/* Error message text */
+.error-popup-message {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* OK button styling */
+.error-popup-button {
+  background: none;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect for the button */
+.error-popup-button:hover {
+  background-color: #ffffff;
+  color: #ef665b;
+}
+
+/* Animation for sliding down */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -30%); /* Start über dem Bildschirm */
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0); /* Zielposition */
+  }
+}

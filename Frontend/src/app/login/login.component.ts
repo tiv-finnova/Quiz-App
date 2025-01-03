@@ -55,23 +55,22 @@ export class LoginComponent implements OnInit {
       password: this.password
     };
 
-    this.http.post<boolean>('http://localhost:8080/login', loginData).subscribe(response => {
-      if (response) {
-        setTimeout(() => {
-          this.loginMessage = 'Eingeloggt!';
-          this.loginErrorMessage = "";
-          this.registerMessage = "";
-          this.loading = false;
-          this.authService.login();
-          this.router.navigate(['/Dashboard']);
-        }, 1000);
+    this.http.post('http://localhost:8080/api/login', loginData, { responseType: 'text' }).subscribe(
+      response => {
+        this.loginMessage = 'Eingeloggt!';
+        this.loginErrorMessage = '';
+        this.loading = false;
+        this.authService.login();
+        this.router.navigate(['/Dashboard']);
+      },
+      error => {
+        this.loginErrorMessage = 'Benutzername oder Passwort ist falsch!';
+        this.loginMessage = '';
+        this.loading = false;
       }
-    }, error => {
-      this.loginMessage = "";
-      this.loginErrorMessage = 'Benutzer oder Passwort ist falsch!';
-      this.loading = false;
-    });
+    );
   }
+
 
   register() {
     const registerData = {
