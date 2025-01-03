@@ -20,6 +20,18 @@ jobs:
         with:
           node-version: 18
 
+      - name: Configure npm registry
+        run: echo "registry=https://registry.npmjs.org/" > ~/.npmrc
+
+      - name: Clean npm cache
+        run: npm cache clean --force
+
+      - name: Remove lock file and node_modules
+        run: |
+          rm -rf Frontend/package-lock.json
+          rm -rf Frontend/node_modules
+        working-directory: Frontend
+
       - name: Install dependencies
         run: npm install
         working-directory: Frontend
