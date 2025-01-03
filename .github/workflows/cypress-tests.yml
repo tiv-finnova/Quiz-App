@@ -28,8 +28,14 @@ jobs:
 
       - name: Remove lock file and node_modules
         run: |
-          rm -rf Frontend/package-lock.json
-          rm -rf Frontend/node_modules
+          rm -rf package-lock.json node_modules
+        working-directory: Frontend
+
+      - name: Fix package-lock.json registry references
+        run: |
+          if [ -f package-lock.json ]; then
+            sed -i 's#https://dev.finnova.ch/artifactory/api/npm/npm.internal.finnova.ch#https://registry.npmjs.org#g' Frontend/package-lock.json
+          fi
         working-directory: Frontend
 
       - name: Install dependencies
