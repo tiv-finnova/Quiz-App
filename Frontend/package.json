@@ -23,7 +23,7 @@
     "rxjs": "~7.8.0",
     "three": "^0.170.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.14.10"
+    "zone.js": "https://dev.finnova.ch/artifactory/api/npm/npm.internal.finnova.ch/zone.js/-/zone.js-0.14.10.tgz"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^18.2.11",
