@@ -20,24 +20,6 @@ jobs:
         with:
           node-version: 18
 
-      - name: Configure npm registry
-        run: echo "registry=https://registry.npmjs.org/" > ~/.npmrc
-
-      - name: Clean npm cache
-        run: npm cache clean --force
-
-      - name: Remove lock file and node_modules
-        run: |
-          rm -rf package-lock.json node_modules
-        working-directory: Frontend
-
-      - name: Fix package-lock.json registry references
-        run: |
-          if [ -f package-lock.json ]; then
-            sed -i 's#https://dev.finnova.ch/artifactory/api/npm/npm.internal.finnova.ch#https://registry.npmjs.org#g' Frontend/package-lock.json
-          fi
-        working-directory: Frontend
-
       - name: Install dependencies
         run: npm install
         working-directory: Frontend
